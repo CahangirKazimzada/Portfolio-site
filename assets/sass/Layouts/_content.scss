@@ -1,156 +1,231 @@
-*{
-    font-family: Poppins;
-}
 main{
-    #discount{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 500px;
-        background-color: burlywood;
-        .discount-box{
-            width: 1200px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 80px;
-            .left-part{
-                width: 400px;
-                display: flex;
-                flex-direction: column;
-                gap: 20px;
-                .faiz{
-                    h2{
-                        color: red;
-                    }
-                }
-                .left-part-title{
-                    h1{
-                        font: normal;
-                        font-weight: bold;
-                        font-size: 40px;
-                    }
-                }
-                .left-part-paragraf{
-                    p{
-                        color: rgb(43, 38, 38);
-                    }
-                }
-                .button{
-                    button{
-                        background-color: #206363;
-                        border: none;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    #best_business{
+        #carouselExampleControls{
+            .carousel-inner{
+                .carousel-item{
+                    position: relative;
+                    .best_business_content{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        position: absolute;
+                        border: solid black;
+                        width: 100%;
+                        height: 100%;
                         color: white;
-                        margin-top: 50px;
-                        padding: 15px 50px;
-                        border-radius: 10px;
+                        text-align: center;
+                        z-index: 1;
+                        h2{
+                            font-size: 24px;
+                            margin-bottom: 20px;
+                        }
+                        p{
+                            font-size: 38px;
+                            line-height: 1.2;
+                            margin: 0 auto 30px auto;
+                        }
+                        button{
+                            font-size: 16px;
+                            letter-spacing: 1px;
+                            background-color: #3ec1d5;
+                            padding: 8px 32px;
+                            color: white;
+                            border: none;
+                            border-radius: 50px;
+                        }
                     }
                 }
             }
-            .left-right{
-                width: 300px;
-                height: 300px;
+        }
+    }
+    #our_services{
+        padding: 50px;
+        .our_services_container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            .our_services_container_title{
+                h1{
+                    font-weight: bold;
+                }
             }
-            .right-part{
-                width: 600px;
-                height: 600px;
-                img{
-                    width: 100%;
-                    height: 100%;
+            .our_services_container_cards{
+                display: grid;
+                grid-template-columns: auto auto auto;
+                gap: 20px;
+                .card{
+                    text-align: center;
+                    border: none;
+                    transition: all;
+                    transition-duration: 2s;
+                    i{
+                        color: #444;
+                        font-size: 36px;
+                        line-height: 36px;
+                        margin: 20px;
+                        transition: all 0.5s;
+                    }
+                    h4{
+                        color: #444;
+                        font-size: 24px;
+                        font-weight: 500;
+                        line-height: 26px;
+                        transition: all 0.5s;
+                    }
+                    &:hover{
+                        i{
+                            color: #3ec1d5;
+                        }
+                        h4{
+                            color: #3ec1d5;
+                        }
+                    }
+                    p{
+                        font-size: 14px;
+                        color: #444;
+                        line-height: 22px;
+                    }
                 }
             }
         }
     }
-    #suggestions{
-        height: 144px;
-        background-color: #F7F7F7;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        .suggest-box{
+    #team{
+        padding: 70px 0 80px;
+        .team_container{
             display: flex;
-            gap: 100px;
-            a{
-                text-decoration: none;
-                color: black;
-            }
-        }
-    }
-    #types{
-        height: 400px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        // background-color: aqua;
-        .type-box{
-            display: flex;
-            gap: 20px;
-            #bags{
-                width: 264px;
-                height: 162px;
-                background: #F5F5F5;
-                border-radius: 10px;
+            flex-direction: column;
+            align-items: center;
+            max-width: 1249px;
+            width: 100%;
+            margin: 0 auto;
+            .team_container_title{
                 display: flex;
                 flex-direction: column;
-                justify-content: space-between;
-                p{
-                    display: flex;
-                    justify-content: flex-start;
-                }
-                .type-img{
-                    display: flex;
-                    justify-content: flex-end;
+                align-items: center;
+                margin: 20px 0 50px 0;
+            }
+            .team_container_cards{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                gap: 5px;
+                width: 100%;
+                .team_container_cards_person{
+                    width: 20%;
+                    text-align: center;
+                    border: 1px solid gray;
+                    position: relative;
+                    img{
+                        width: 100%;
+                        margin-bottom: 10px;
+                    }
+                    .overlay{
+                        background-color: black;
+                        opacity: 0;
+                        position: absolute;
+                        top: 0;
+                        width: 100%;
+                        height:304px;
+                        // z-index: -1;
+                        transition: 0.8s ease;
+                        .overlay_icons{
+                            transition: all 0.8s;
+                            opacity: 0;
+                            a{
+                                transition: all 0.8s;
+                                opacity: 0;
+                                i{
+                                    border: 1px solid white;
+                                    color: white;
+                                    border-radius: 50%;
+                                    padding: 10px;
+                                    margin: 30px 10px;
+                                    transition: all 0.8s;
+                                    opacity: 0;
+                                    &:hover{
+                                        background-color: #3ec1d5;
+                                        border: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &:hover{
+                        .overlay{
+                            // z-index: 1;
+                            opacity: 0.8;
+                            .overlay_icons{
+                                position: absolute;
+                                top: 100px;
+                                margin: 0 auto;
+                                width: 100%;
+                                opacity: 1;
+                                a{
+                                    opacity: 1;
+                                    i{
+                                        opacity: 1;
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
-            // .shoulder-bags{
-            //     position: relative;
-            //     p{
-            //         font-weight: bold;
-            //         padding-left: 10px;
-            //         padding-top: 10px;
-            //     }
-            //     img{
-            //         position: absolute;
-            //         bottom: 0.8px;
-            //         left: 120px;
-            //     }
-            // }
-            // .hand-bag{
-            //     p{
-            //         font-weight: bold;
-            //         padding-left: 10px;
-            //         padding-top: 10px;
-            //     }
-            //     img{
-            //         position: absolute;
-            //         left: 513px;
-            //         bottom: -462px;
-            //     }
-            // }
-            // .backpack{
-            //     p{
-            //         font-weight: bold;
-            //         padding-left: 10px;
-            //         padding-top: 10px;
-            //     }
-            //     img{
-            //         position: absolute;
-            //         right: 399px;
-            //         top: 974px;
-            //     }
-            // }
-            // .evening-bag{
-            //     p{
-            //         font-weight: bold;
-            //         padding-left: 10px;
-            //         padding-top: 10px;
-            //     }
-            //     img{
-            //         position: absolute;
-            //         top: 1028px;
-            //         left: 1080px;
-            //     }
-            // }
+        }
+    }
+    #working{
+        .working_container{
+            display: flex;
+            background-image: url("/assets/images/white\ city.jpg");
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            .working_container_left{
+                img{
+                    height: 370px;
+                }
+            }
+            .working_container_right{
+                width: 50%;
+                color: white;
+                background-color: black;
+                opacity: 0.8;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .working_container_right_content{
+                    margin: 0 40px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 40px;
+                    h2{
+                        font-size: 25px;
+                    }
+                    h5{
+                        line-height: 30px;
+                        font-weight: bold;
+                    }
+                    a{
+                        border: 1px solid #fff;
+                        text-decoration: none;
+                        color: white;
+                        padding: 12px 40px;
+                        width: 200px;
+                        border-radius: 30px;
+                        transition: 0.5s;
+                        &:hover{
+                            background-color: #3ec1d5;
+                            z-index: 20;
+                        }
+                    }
+                }
+            }
         }
     }
 }

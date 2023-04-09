@@ -1,0 +1,119 @@
+@media screen and (max-width:830px){
+    /*NAVBAR*/
+    nav{
+        .container{
+            .navbar_container{
+                .navbar_container_eBusiness{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    i{
+                        display: inline-block;
+                        font-size: 25px;
+                    }
+                    h1{
+                        font-size: 28px;
+                    }
+                }
+                .navbar_container_list{
+                    display: none;
+                }
+            }
+        }
+    }
+    /* BEST BUSINESS*/
+    main{
+        #best_business{
+            #carouselExampleControls{
+                .carousel-inner{
+                    .carousel-item{
+                        img{
+                            height: 100vh;
+                        }
+                        .best_business_content{
+                            h2{
+                                width: 60%;
+                                font-size: 20px;
+                            }
+                            p{
+                                font-size: 28px;
+                                margin: 0 50px 50px;
+                                br{
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        /*OUR SERVICES*/
+        #our_services{
+            padding: 50px 0;
+            .our_services_container{
+                .our_services_container_title{
+                    h1{
+                        font-size: 40px;
+                    }
+                }
+                width: 100%;
+               .our_services_container_cards{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                .card_icon{
+                    font-size: 36px;
+                }
+                .card_title{
+                    h4{
+                        font-size: 25px;
+                    }
+                }
+                .card_content{
+                    p{
+                        font-size: 18px;
+                    }
+                }
+               }
+            }
+        }
+        #team{
+            .team_container{
+                .team_container_title{
+                    h1{
+                        font-size: 35px;
+                    }
+                }
+                .team_container_cards{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    .team_container_cards_person{
+                        width: 80%;
+                        .overlay{
+                            height: 370px;
+                        }
+                    }
+                }
+            }
+        }
+        #working{
+            .working_container{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                .working_container_right{
+                    width: 100%;
+                    padding: 100px 5px;
+                }
+                .working_container_left{
+                    height: 300px;
+                    img{
+                        height: 300px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,7 +1,5 @@
-
-
-@import "/assets/sass/Layouts/navbar";
-@import "/assets/sass/Layouts/header";
-@import "/assets/sass/Layouts/content";
-@import "/assets/sass/Layouts/cards";
-@import "/assets/sass/Layouts/footer"
+@import "./Layouts/header";
+@import "./Layouts/navbar";
+@import "./Layouts/content";
+@import "./rest";
+@import "./responsive";
